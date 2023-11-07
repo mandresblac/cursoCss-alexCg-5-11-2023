@@ -1,0 +1,39 @@
+/* ------ Selectores de atributo ------ */
+[value] {
+  display: block;
+  width: 80%;
+  margin-top: 20px;
+}
+
+[type="text"] {
+  background-color: yellow;
+}
+
+[type="submit"] {
+  background-color: darkorange;
+  color: white;
+}
+
+/* Virgulilla ~ */
+[value~="cusrsocss.com"] {
+  background-color: lightseagreen;
+  color: white;
+}
+
+/* Caracter circunflejo ^ */
+[value^="Enviar"] {
+  background-color: salmon;
+  color: white;
+}
+
+/* Signo pesos $ */
+[value$="contraseña"] {
+  background-color: green;
+  color: white;
+}
+
+/* Signo de asterisco "*" */
+[value*="cusrsocss.com"] {
+  background-color: purple;
+  color: white;
+}

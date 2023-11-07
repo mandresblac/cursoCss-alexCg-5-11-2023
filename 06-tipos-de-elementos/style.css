@@ -1,0 +1,97 @@
+/* Existen 2 tipos de elementos en HTML y CSS: block(De bloque) e inline(en línea) */
+
+/* Caracteristicas de los Elementos block o de bloque: 
+  - Por defecto tienen un display: block
+  - Generan un salto de línea
+  - Ocupan todo el ancho del Viewport
+  - Pueden utilizar todas las propiedades del box model, es decir, margin, border, padding, width y height
+  - Solo se puede centrar a los elementos con margenes automaticas (margin: 0 auto) si el elemento es display block y ademas si tiene un width definido.
+*/
+
+/* Caracteristicas de los Elementos inline o de linea:
+  - Por defecto tienen un display: inline. 
+  - Solamente ocupan el espacio de su contenido.
+  - No generan un salto de línea, los elementos se ubican horizontalmente uno al lado del otro.
+  - No se le pueden aplicar las propiedades del box model como width y height.
+  - No se le pueden aplicar las propiedades margin, border y padding de manera vertical, es decir arriba(top) y abajo(bottom) pero horizontalmete si aplican, es decir, derecha(right) e izquierda(left).
+*/
+
+/* display: inline-block; */
+/* La propiedad inline-block permite que a un elemento inline se le puedan aplicar todas las propiedades del Box model (margin, border, padding, width y height) y el elemento continua siendo inline, es decir, que se sigue ubicando uno al lado del otro */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.title {
+  margin: 40px auto;
+  width: 70%;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  background-color: purple;
+  color: #fff;
+  padding: 15px 0;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 40px;
+}
+
+.card {
+  background-color: #15273f;
+  color: white;
+  width: 300px;
+  height: 500px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 30px 25px;
+  border-radius: 10px;
+}
+
+.card__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /*  la imagen mantiene su relación de aspecto y se ajusta a su contenedor */
+  display: block;
+  border-radius: inherit;
+}
+
+.card__title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+
+.card__paragraph {
+  color: #99b0d4;
+}
+
+.card__cta {
+  display: block;
+  background-color: white;
+  color: #15273f;
+  margin-top: 20px;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__cta:hover {
+  color: white;
+  background-color: rgba(227, 227, 227, 0.4);
+}

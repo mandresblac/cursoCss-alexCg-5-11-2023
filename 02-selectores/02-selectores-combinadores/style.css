@@ -1,0 +1,43 @@
+/* los selectores combinadores permiten ser mas especificos sobre que elementos queremos seleccionar */
+
+/* ------ Selector combinador de descendientes ------ */
+/* Se representa por un espacio en blanco entre los selectores */
+.listas .lista {
+  text-decoration: underline;
+}
+
+.todo .lista {
+  list-style: decimal;
+}
+
+.dias .lista {
+  list-style: none;
+  /* background-color: yellow; */
+}
+
+/* ------ Selector combinador de hijos directos ------ */
+/* Se representa por un signo mayor que ">" entre los selectores */
+.listas > .lista {
+  list-style: upper-roman;
+  /* background-color: lightgreen; */
+}
+
+.dias > .lista {
+  color: orangered;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ---------- SELECTORES MAS RECOMENDADOS PARA USAR ---------- */
+
+/* ------ Selector combinador de hermano adyacente ------ */
+/* Se representa por un signo mas "+" entre los selectores */
+.subtitulo + .parrafo {
+  background-color: yellow;
+}
+
+/* ------ Selector combinador de hermanos generales ------ */
+/* Se representa por un signo de virgulilla "~" entre los selectores */
+.subtitulo ~ .parrafo {
+  background-color: tomato;
+}

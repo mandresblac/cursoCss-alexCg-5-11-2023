@@ -1,0 +1,52 @@
+/* ------ Selector universal ------ */
+
+/* EL selector universal * indica que estamos seleccionando todos los elementos */
+* {
+  background-color: teal;
+}
+
+/* ------ Selector de tipo o etiqueta ------ */
+body {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+h2 {
+  color: crimson;
+  font-size: 40px;
+}
+
+li {
+  color: slateblue;
+  font-size: 20px;
+}
+
+/* ------ Selector de clase ------ */
+.peliculas {
+  color: lightsalmon;
+}
+
+.series {
+  font-size: 40px;
+}
+
+.favoritas {
+  font-weight: bold;
+  color: rebeccapurple;
+}
+
+.espaciado {
+  letter-spacing: 10px; /* letter-spacing configura espacio entre cada letra */
+}
+
+/* ------ Selector de id ------ */
+#spiderman-no-way-home {
+  font-size: 25px;
+  color: tomato;
+  text-decoration: underline;
+}
+
+#temporada3 {
+  color: seagreen;
+  font-size: 15px;
+}

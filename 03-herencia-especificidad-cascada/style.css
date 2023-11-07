@@ -1,0 +1,53 @@
+/* ---------------- ESPECIFICIDAD ---------------- */
+/* Le especificidad tiene mayor importancia que la cascada */
+
+/* Valores de especificidad de los selectores
+  0, 0, 1 ==> Selectores de tipo (o etiqueta) y pseudoelementos.
+  0, 1, 0 ==> Selectores de clase, atributo y pseudoclases.
+  1, 0, 0 ==> Selectores de Id.
+  !important ==> rompe la especificidad, ignorado las demas reglas. 
+
+*/
+
+.title {
+  color: salmon;
+  font-family: Helvetica;
+}
+
+#title {
+  color: purple;
+  font-family: verdana;
+}
+
+/* ---------------- CASCADA ---------------- */
+/* EL ultimo estilo declarado sera el que se aplicque al elemento */
+h1 {
+  color: royalblue;
+  font-family: sans-serif;
+}
+
+h1.title {
+  color: orange;
+  font-family: cursive;
+  background-color: black;
+}
+
+/* El valot !important rompe la especificidad, ignorado las demas reglas y aplicando ese estilo al elemento sin importat los demas, pero es una mala practica */
+h1 {
+  color: blue !important;
+}
+
+/* ---------------- HERENCIA ---------------- */
+/* La herencia es la caracteristica que tienen los padres de heredar estilos a sus hijos */
+/* inherit significa que hereda */
+
+body {
+  border: 3px solid orange;
+  font-family: Arial;
+  color: slateblue;
+}
+
+input {
+  font-size: 25px;
+  color: green;
+}

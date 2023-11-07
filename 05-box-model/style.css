@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Georgia;
+}
+
+/* Capa de contenido */
+.card {
+  background-color: royalblue;
+  color: white;
+  width: auto; /* auto ajusta el ancho de acuerdo al contenido que tenga el elemento */
+  max-width: 500px; /* Para delimitar el ancho maximo de un elemento */
+  min-width: 200px; /* Para delimitar el ancho minimo de un elemento */
+  height: 300px;
+  max-height: 500px; /* Para delimitar la altura maxima de un elemento */
+  min-height: 200px; /* Para delimitar la altura minima de un elemento */
+  padding: 50px; /* top, right, bottom, left */
+  border: 5px solid yellow;
+  border-style: dashed; /* solid, dashed, dotted, double, groove, ridge */
+}
+
+.card--one {
+  margin: 0 auto;
+}
+
+/* ---------- COLAPSO DE MARGENES ---------- */
+.main {
+  background-color: steelblue;
+  color: white;
+  padding: 0.1px;
+}
+
+.main__title {
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: slateblue;
+  color: white;
+}
