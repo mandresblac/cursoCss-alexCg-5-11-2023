@@ -8,4 +8,47 @@
 
 body {
   font-family: sans-serif;
+  min-height: 500vh;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  border: 4px solid;
+  position: relative;
+}
+
+.element {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.static {
+  background-color: tomato;
+}
+
+.relative {
+  background-color: steelblue;
+  position: relative;
+  /* top: -150px; */
+  /* right: -30px; */
+  /* bottom: -30px; */
+  /* left: 300px; */
+  z-index: 100;
+}
+
+.absolute {
+  background-color: teal;
+  /* position: absolute; */
+  top: 100px;
+  right: 100px;
+}
+
+.fixed {
+  background-color: crimson;
+  position: fixed;
+  top: 100px;
+  left: 40px;
+  z-index: auto;
 }
