@@ -15,7 +15,11 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image: url("./img/wave.svg"),
+    linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: 100% 150px, cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .hero__container {

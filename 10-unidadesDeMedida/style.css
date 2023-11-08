@@ -1,0 +1,40 @@
+/* UNIDADES DE MEDIDA */
+
+/* UNIDADES RELATIVAS
+Hay dos: rem y em.
+
+rem
+Ee basa en el tamaño de fuente del elemento raiz del documento que es la etiqueta html.
+1rem = 16px 
+
+em
+Es relativo al tamaño de fuente del padre o del ansestro superior mas cercano que tenga declarado un font-size, si no hay ninguno, por defecto tomara el tamaño del elemento raiz del documento que es la etiqueta html.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: sans-serif, Tahoma;
+}
+
+.container {
+  padding: 40px;
+}
+
+.container__child {
+  font-size: 15px;
+}
+
+.title {
+  font-size: 3em;
+}
