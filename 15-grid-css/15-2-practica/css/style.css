@@ -57,3 +57,69 @@ body {
 .main__links {
   display: none;
 }
+
+.main__controls {
+  grid-area: main;
+  align-self: end;
+  justify-self: end;
+  background-color: var(--black);
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main__control {
+  height: 40%;
+}
+
+.main__buy {
+  grid-area: cta;
+}
+
+.main__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main__title {
+  color: var(--black);
+}
+
+.main__pragraph {
+  line-height: 1.5;
+  margin: 1em 0 2em;
+  color: var(--dark-gray);
+}
+
+.main__paragraph--about {
+  margin: 1em 0 0 0;
+}
+
+.main__cta {
+  color: var(--very-dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.main__arrow {
+  margin-left: 20px;
+}
+
+.main__bg {
+  grid-area: image1;
+  min-height: 250px;
+  height: 100%;
+  background-image: url(../images/image-about-dark.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main__about {
+  grid-area: about;
+}
