@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: tomato;
+}
+
+.img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* ------------ MEDIAQUERIES ------------ */
+@media (min-width: 800px) {
+  body {
+    background-color: crimson;
+  }
+  .img {
+    width: 50%;
+    /* height: 50%; */
+    border-radius: 50%;
+  }
+}
