@@ -88,10 +88,11 @@ body {
 .cta {
   display: inline-block;
   background-color: var(--pink);
-  color: white;
+  color: #fff;
   padding: 16px 30px;
   border-radius: 30px;
   margin-top: 16px;
+  font-weight: 600;
 }
 
 .hero__picture {
@@ -145,4 +146,135 @@ body {
   left: 0;
   top: 0;
   background-image: var(--wave-top);
+}
+
+/* ------------ MAIN ------------ */
+.section {
+  background-color: var(--very-pale-blue);
+  --padding-container: 110px 0;
+}
+
+.section--white {
+  background-color: white;
+  position: relative;
+  --padding-container: 210px 0;
+  --wave-top: url(../images/bg-section-bottom-mobile-1.svg);
+  --wave-bottom: url(../images/bg-section-top-mobile-2.svg);
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__img {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.section__texts {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+  font-family: var(--poppins);
+}
+
+/* ------------ MAIN QUESTION ------------ */
+.question {
+  position: relative;
+  text-align: center;
+  --padding-container: 190px 0 210px;
+  --wave-top: url(../images/bg-section-bottom-mobile-2.svg);
+  --wave-bottom: url(../images/bg-footer-top-mobile.svg);
+}
+
+/* ------------ FOOTER ------------ */
+.footer {
+  color: #fff;
+  background-color: var(--very-dark-cyan);
+}
+
+.footer__title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  font-family: var(--poppins);
+}
+
+.footer__paragraph {
+  line-height: 1.5;
+  margin: 16px 0 50px;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.footer__input {
+  flex-basis: 100%;
+  flex-grow: 1;
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 12px 6px;
+  margin-bottom: 20px;
+}
+
+.footer__cta {
+  font-size: 1rem;
+  font-family: var(--open-sans);
+  background-color: var(--pink);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 40px;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.footer__logo {
+  /* background-color: black; */
+  color: #fff;
+}
+
+.footer__contact {
+  line-height: 50px;
+}
+
+.footer__contact::after {
+  content: "Phone: +1-543-123-4567";
+  margin-left: 10px;
+}
+
+.footer__contact--email::after {
+  content: "example@huddle.com";
+}
+
+.footer__social {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer__link {
+  width: 40px;
+}
+
+.footer__icon {
+  width: 100%;
+  display: block;
+}
+
+/* ------------ MEDIAQUERIES ------------ */
+@media (min-width: 768px) {
 }
