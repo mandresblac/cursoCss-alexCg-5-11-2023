@@ -32,7 +32,6 @@ body {
   height: 100px;
   line-height: 100px;
   /* flex-shrink: 1; */
-  flex-basis: ;
 }
 
 .element1 {
