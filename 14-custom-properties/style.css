@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* VARIABLES O CUSTOM PROPERTIES */
+:root {
+  --juanito: linear-gradient(steelblue, hotpink);
+  --bordes: 1px solid #000;
+  --color-primario: crimson;
+  --padding-botones: 20px 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+.title {
+  border: var(--bordes);
+  color: var(--color-primario);
+}
+
+.paragraph {
+  color: var(--color-primario);
+  border: var(--bordes);
+}
+
+.container {
+  --borde: 5px solid #000;
+}
+
+.cta {
+  border: var(--borde);
+  background-color: var(--color-primario);
+  display: block;
+  padding: var(--padding-botones);
+  border-radius: 30px;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
