@@ -28,10 +28,11 @@ body {
   font-family: var(--open-sans);
 }
 
-/* ------------ MENU DE NAVEGACIÓN ------------ */
+/* ------------ HEADER NAVEGACIÓN ------------ */
 .hero {
   min-height: 100vh;
   position: relative;
+  --wave-bottom: url(../images/bg-section-top-mobile-1.svg);
 }
 
 .container {
@@ -66,4 +67,82 @@ body {
   border-radius: 30px;
   font-weight: 600;
   box-shadow: 0 0 1px;
+}
+
+/* ------------ HEADER MAIN ------------ */
+.hero__main {
+  text-align: center;
+  color: var(--very-dark-cyan);
+}
+
+.hero__title {
+  font-family: var(--poppins);
+}
+
+.hero__paragraph {
+  width: 90%;
+  margin: 16px auto;
+  line-height: 1.5;
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--pink);
+  color: white;
+  padding: 16px 30px;
+  border-radius: 30px;
+  margin-top: 16px;
+}
+
+.hero__picture {
+  margin-top: 80px;
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ------------ HEADER NUMBERS ------------ */
+.hero__numbers {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  gap: 70px;
+}
+
+.hero__item {
+  overflow: hidden; /* Para que todo lo que salga de .hero__item se esconda */
+}
+
+.hero__icon {
+  display: block;
+}
+
+.hero__number {
+  font-size: 60px;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100px;
+}
+
+.wave--bottom {
+  left: 0;
+  bottom: 0;
+  background-image: var(--wave-bottom);
+}
+
+.wave--top {
+  left: 0;
+  top: 0;
+  background-image: var(--wave-top);
 }
