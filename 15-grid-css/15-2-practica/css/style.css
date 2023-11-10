@@ -34,7 +34,7 @@ body {
 .main__hero {
   grid-area: main;
   background-image: url(../images/desktop-image-hero-1.jpg);
-  min-height: 550px;
+  min-height: 500px;
   background-size: cover;
   background-position: center;
 }
@@ -122,4 +122,46 @@ body {
 
 .main__about {
   grid-area: about;
+}
+
+.main__bg--second {
+  grid-area: image2;
+  background-image: url(../images/image-about-light.jpg);
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+@media (min-width: 768px) {
+  .container {
+    width: 85%;
+    padding: 70px 0;
+  }
+  .main {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+      "main main main main cta cta cta"
+      "main main main main cta cta cta"
+      "main main main main cta cta cta"
+      "image1 image1 about about about image2 image2"
+      "image1 image1 about about about image2 image2";
+  }
+  .main__controls {
+    grid-area: cta;
+    justify-self: start;
+  }
+  .main__logo {
+    margin: 0;
+  }
+  .main__hamburguer {
+    display: none;
+  }
+  .main__links {
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    margin-left: 10%;
+  }
+  .main__link {
+    color: var(--white);
+  }
 }
