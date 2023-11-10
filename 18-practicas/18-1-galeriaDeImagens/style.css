@@ -1,0 +1,124 @@
+/* FUENTES DE GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0.8em 0 0.4em;
+}
+
+.gallery {
+  padding: 1em 0 3em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px /* auto */;
+  grid-template-areas:
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img4"
+    "img5 img5 img6 img7"
+    "img5 img5 img8 img8";
+  gap: 0.8em;
+}
+
+.gallery__picture {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; /* Para que todo lo que salga del elemento se esconda */
+}
+
+.gallery__picture::before {
+  content: "Hola mundo";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5b40f3a6;
+  transform: scaleY(0);
+  transition: transform 0.4s;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.gallery__picture:hover::before {
+  transform: scaleY(1) /* rotate(360deg) */;
+}
+
+.gallery__picture--g1 {
+  grid-area: img1;
+}
+
+.gallery__picture--g2 {
+  grid-area: img2;
+}
+
+.gallery__picture--g3 {
+  grid-area: img3;
+}
+
+.gallery__picture--g4 {
+  grid-area: img4;
+}
+
+.gallery__picture--g5 {
+  grid-area: img5;
+}
+
+.gallery__picture--g6 {
+  grid-area: img6;
+}
+
+.gallery__picture--g7 {
+  grid-area: img7;
+}
+
+.gallery__picture--g8 {
+  grid-area: img8;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Para que la imagen se adapte al contenedor y no pierda resolución */
+}
+
+/* --------------- MEDIA QUERIES --------------- */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    padding: 0.8em 0 0.4em;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img1 img1"
+      "img1 img1"
+      "img2 img3"
+      "img4 img4"
+      "img4 img4"
+      "img5 img5"
+      "img5 img5"
+      "img6 img7"
+      "img8 img8"
+      "img8 img8";
+  }
+  .gallery__picture::before {
+    font-size: 1rem;
+  }
+}
