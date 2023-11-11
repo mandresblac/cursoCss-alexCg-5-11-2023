@@ -8,6 +8,8 @@
 
 body {
   font-family: sans-serif;
+  display: flex;
+  height: 100vh;
 }
 
 .box {
@@ -63,5 +65,38 @@ body {
   }
   100% {
     transform: scale(2.5);
+  }
+}
+
+.bell {
+  background-color: #3d3dcf;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+}
+
+.bell__item {
+  margin: auto;
+  width: 80px;
+  animation: infinite campana 1s;
+}
+
+@keyframes campana {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(30deg);
   }
 }
