@@ -9,3 +9,59 @@
 body {
   font-family: sans-serif;
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 60px;
+  background-color: tomato;
+
+  /* Animación */
+  animation-name: cambiar-color;
+  /* animation-name: grow; */
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+  animation-fill-mode: both;
+  /* animation-delay: 1s; */
+
+  animation: cambiar-color 1s linear infinite alternate both 2s running;
+}
+
+.box:hover {
+  animation-play-state: paused;
+}
+
+/* Animación */
+@keyframes cambiar-color {
+  0% {
+    transform: translate(0);
+    background-color: crimson;
+  }
+  25% {
+    transform: translate(100%);
+    background-color: salmon;
+  }
+  50% {
+    transform: translate(100%, 100%);
+    background-color: slateblue;
+  }
+  75% {
+    transform: translate(0, 100%);
+    background-color: teal;
+  }
+  100% {
+    transform: translate(0);
+    background-color: #000;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(2.5);
+  }
+}
