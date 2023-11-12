@@ -1,0 +1,89 @@
+/* VARIABLES O CUSTOM PROPERTIES */
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --font1: "Fraunces", serif;
+  --font2: "Barlow", sans-serif;
+}
+
+/* -------------- ESTILOS GENERALES -------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font2);
+}
+
+/* -------------- SECCIÓN HEADER -------------- */
+.hero {
+  background-image: url(../images/mobile/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  padding: 30px 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+}
+
+.container {
+  padding: 80px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero__main {
+  height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-family: var(--font1);
+  text-transform: uppercase;
+  letter-spacing: 5px; /* Configura espacio entre letras de una palabra */
+  margin-bottom: 1rem;
+}
+
+/* -------------- SECCIÓN MAIN -------------- */
+.services {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 250px 400px);
+}
+
+.services__image {
+  background-image: url(../images/mobile/image-transform.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.services__texts {
+  padding: 1rem 1.5rem;
+  place-self: center;
+  text-align: center;
+}
+
+.services__title {
+  font-size: 2rem;
+  font-family: var(--font1);
+}
