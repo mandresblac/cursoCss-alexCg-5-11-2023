@@ -192,7 +192,7 @@ body {
 .testimonials__paragraph {
   color: var(--dark-blue);
   line-height: 1.5;
-  margin: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .testimonials__name {
@@ -329,17 +329,47 @@ body {
   }
 
   .jobs__section--second {
-    color: var(--dark-blue);
-    background-image: url(../images/mobile/image-photography.jpg);
+    background-image: url(../images/desktop/image-photography.jpg);
   }
 
-  .jobs__name {
-    font-family: var(--font1);
-    font-size: 1.7rem;
+  /* -------------- MAIN TESTIMONIALS -------------- */
+  .testimonials {
+    text-align: center;
+  }
+  .testimonials__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .testimonials__paragraph {
+    margin: 2.5rem 0;
   }
 
-  .jobs__paragraph {
-    line-height: 1.5;
-    margin-top: 1rem;
+  /* -------------- MAIN GALLERY -------------- */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px;
+  }
+
+  .gallery__image {
+    aspect-ratio: unset;
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+  }
+
+  .gallery__image:nth-of-type(2) {
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+  }
+
+  .gallery__image:nth-of-type(3) {
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+  }
+
+  .gallery__image:nth-of-type(4) {
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+  }
+
+  /* -------------- FOOTER -------------- */
+  .footer__link {
+    padding: 2rem 0 5rem;
   }
 }
