@@ -2,7 +2,7 @@
 :root {
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
-  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-desaturated-cyan: #25564b;
   --dark-blue: hsl(198, 62%, 26%);
   --dark-moderate-cyan: hsl(168, 34%, 41%);
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -227,3 +227,34 @@ body {
 }
 
 /* -------------- FOOTER -------------- */
+.footer {
+  background-color: #90d4c5;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 200px;
+}
+
+.footer__nav {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  color: var(--dark-moderate-cyan);
+  padding: 1.5rem 0 3rem;
+}
+
+.footer__social {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
