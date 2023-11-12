@@ -199,3 +199,31 @@ body {
 .testimonials__job {
   color: var(--grayish-blue);
 }
+
+/* -------------- SECCIÓN MAIN GALLERY -------------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery__image:nth-of-type(2) {
+  background-image: url(../images/mobile/image-gallery-orange.jpg);
+}
+
+.gallery__image:nth-of-type(3) {
+  background-image: url(../images/mobile/image-gallery-cone.jpg);
+}
+
+.gallery__image:nth-of-type(4) {
+  background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+/* -------------- FOOTER -------------- */
